@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://github.com/\\2/\\3/pull/\\4"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https://app\\.graphite\\.(dev|com)/github/pr/([^/]+)/([^/]+)/([0-9]+)(/.*)?$",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  }
+]
